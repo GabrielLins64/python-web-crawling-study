@@ -1,0 +1,20 @@
+[
+  {
+      "url": "https://www.melhorcambio.com/dolar-hoje",
+      "data": [
+          {
+              "result_name": "USD",
+              "find_regex": "<input type=\"text\" value=\"([0-9,]+)\" class=\"text-verde\" id=\"comercial\" calc=\"sim\">"
+          }
+      ]
+  },
+  {
+      "url": "https://www.melhorcambio.com/euro-hoje",
+      "data": [
+          {
+              "result_name": "EURO (€)",
+              "find_regex": "<input type=\"text\" value=\"([0-9\\,]+)\" class=\"text-verde\" id=\"comercial\" calc=\"sim\">"
+          }
+      ]
+  }
+]
