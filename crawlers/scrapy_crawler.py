@@ -5,12 +5,10 @@ from scrapy.crawler import CrawlerProcess
 class ScrapyCrawler(scrapy.Spider):
     """Scrapy Web Crawler"""
 
-
     def __init__(self):
         self.start_urls = ["https://quotes.toscrape.com/page/1",
-                           "https://quotes.toscrape.com/page/2",]
+                           "https://quotes.toscrape.com/page/2"]
         super().__init__(name="Quotes Spider")
-
 
     def parse(self, response):
         page = response.url.split("/")[-2]
@@ -19,11 +17,9 @@ class ScrapyCrawler(scrapy.Spider):
             f.write(response.body)
         self.log(f'Saved file {filename}')
 
-
     def start_requests(self):
         for url in self.start_urls:
             yield scrapy.Request(url=url, callback=self.parse)
-
 
     @classmethod
     def dig(cls):
