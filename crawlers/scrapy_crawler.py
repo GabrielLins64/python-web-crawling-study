@@ -14,7 +14,7 @@ class ScrapyCrawler(scrapy.Spider):
 
     def parse(self, response):
         page = response.url.split("/")[-2]
-        filename = f'data/quotes-{page}.html'
+        filename = f'results/quotes-{page}.html'
         with open(filename, 'wb') as f:
             f.write(response.body)
         self.log(f'Saved file {filename}')
