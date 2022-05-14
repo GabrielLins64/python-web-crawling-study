@@ -1,4 +1,5 @@
 from .urllib_crawler import UrlLibCrawler
+from .scrapy_crawler import ScrapyCrawler
 from pprint import pprint
 import json
 
@@ -16,5 +17,10 @@ def test_urrlib_crawler():
     pprint(result)
 
 
+def test_scrapy_crawler():
+    ScrapyCrawler.dig()
+
+
 if __name__ == '__main__':
-    test_urrlib_crawler()
+    # test_urrlib_crawler()
+    test_scrapy_crawler()

@@ -37,7 +37,7 @@ python -m pip install -r requirements.txt
 ## Crawlers
 
 - [X] urllib crawlers
-- [ ] Scrapy crawlers
+- [X] Scrapy crawlers
 - [ ] Selenium crawlers
 
 ### Urllib
