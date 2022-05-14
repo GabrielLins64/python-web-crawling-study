@@ -6,7 +6,7 @@ import json
 SEARCH_FILE = "search.json"
 
 
-if __name__ == '__main__':
+def test_urrlib_crawler():
     with open(SEARCH_FILE) as f:
         sources = json.loads(f.read())
 
@@ -14,3 +14,7 @@ if __name__ == '__main__':
     result = crawler.dig()
 
     pprint(result)
+
+
+if __name__ == '__main__':
+    test_urrlib_crawler()
