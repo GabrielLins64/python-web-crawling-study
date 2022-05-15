@@ -11,6 +11,8 @@ A web crawler, or *web spider*, refers to a bot that searches data on the web. B
 - [Crawlers](#crawlers)
   - [Urllib](#urllib)
   - [Scrapy](#scrapy)
+    - [Starting a scrapy project](#starting-a-scrapy-project)
+    - [Running the scrapy project](#running-the-scrapy-project)
   - [Selenium](#selenium)
 
 ---
@@ -37,11 +39,29 @@ python -m pip install -r requirements.txt
 ## Crawlers
 
 - [X] urllib crawlers
-- [ ] Scrapy crawlers
+- [X] Scrapy crawlers
 - [ ] Selenium crawlers
 
 ### Urllib
 
 ### Scrapy
+
+[Official docs](https://docs.scrapy.org/en/latest/index.html)
+
+#### Starting a scrapy project
+
+Create a new scrapy project:
+
+```shell
+scrapy startproject scrapy_crawlers_proj
+```
+
+#### Running the scrapy project
+
+In order to run the named "*quotes*" spider, defined at `scrapy_crawlers_proj/spiders/quotes_spider.py`, simply run:
+
+```shell
+scrapy crawl quotes
+```
 
 ### Selenium
